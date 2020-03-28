@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#h1 {
+  opacity: 0;
+  animation: opacity-in 2.6s ease-in 0 infinite;
+  text-align: center;
+  line-height: 100vh;
+  font-family: Tangerine;
+  text-shadow: 4px 4px 4px #555;
+  font-size: 4em;
+}
+
+.container {
+  width: 0%;
+  height: 5vh;
+  margin: 50vh 0 0 0.5%;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  animation: slide-then-zoom 2.6s ease-in 0 infinite;
+  animation-fill-mode: forward;
+}
+
+@keyframes slide-then-zoom {
+  12.5% {
+    width: 0%;
+    height: 0vh;
+  }
+  25% {
+    width: 100%;
+    height: 0vh;
+  }
+  25% {
+    width: 100%;
+    height: 0vh;
+    margin: 50vh 0 0 0;
+  }
+  50%,
+  100% {
+    width: 100%;
+    height: 100vh;
+    margin: 0 0 0 0;
+  }
+}
+
+@keyframes opacity-in {
+  12.5% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90%,
+  100% {
+    opacity: 1;
+  }
+}
